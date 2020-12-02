@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--The IMG for login do not contain a source of image--> 
+<!--Rename as _img_src_PLS_login-->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+hr {
+background-color: black;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="header" id="myHeader">
+  <h2><a href="#home"> Home </a><a href="#product"> Products </a> <img src="#_img_src_pls" alt="#_img_src_PLS_login"></h2>
+</div>
+<!--Please keep this script here dont move again-->
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+<!--Please dont move this script again-->
+<div class="content">
+  <!--some texte here-->
+  <h2>Normal curtain...</h2>
+  <table>
+      <td>
+        <tr>  EMPTY</tr>
+        <tr>  EMPTY</tr>
+        <tr>  EMPTY</tr>
+        <tr>  EMPTY</tr>
+        <tr>  EMPTY</tr>
+        <tr>  EMPTY</tr>
+        <tr>  EMPTY</tr>
+        
+      </td>
+  </table>
+  <hr>
+  <h2> Other type of curtain.. </h2>
+  <table>
+    <td>
+      <tr>EMPTY</tr>
+    </td>
+  </table>
+  <hr>
+</div>
+
+
+
+</body>
+</html>
+<!--eCurtain copyright liences-->
